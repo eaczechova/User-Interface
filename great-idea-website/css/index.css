@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	padding: 20px 80px;
+	padding: 60px 80px 20px;
 }
 
 /* Your code starts here! */
@@ -83,6 +83,13 @@ header nav a:first-child {
 
 nav {
 	margin-bottom: 35px;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	/* z-index: 2;
+	position: absolute; */
 }
 
 .nav-list, .nav-logo {
@@ -92,6 +99,8 @@ nav {
 
 .nav-list {
 	width: 70%;
+	padding: 10px 0 20px 50px;
+	
 }
 
 /* Sliding Underline Menu - inspired by https://codepen.io/rm/pen/ldhon */
@@ -156,6 +165,7 @@ nav {
 	background: transparent;
 	border: 1px solid black;
 	transition: 0.3s;
+	animation: beat 3s infinite;
 }
 
 .header-intro button:hover {
@@ -233,4 +243,10 @@ address a {
 address a:hover {
 	text-decoration: underline;
 	transition: 0.3s;
+}
+
+@keyframes beat {
+	0% {transform: scale(1); }
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1); }
 }
