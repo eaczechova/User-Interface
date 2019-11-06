@@ -164,6 +164,7 @@ nav {
 	font-size: 14px;
 	background: transparent;
 	border: 1px solid black;
+	font-family: 'Nanum Gothic', sans-serif;
 	transition: 0.3s;
 	animation: beat 3s infinite;
 }
@@ -217,6 +218,7 @@ nav {
 
 footer {
 	margin: 40px 0;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 footer h2 {
@@ -249,4 +251,35 @@ address a:hover {
 	0% {transform: scale(1); }
 	50% {transform: scale(1.2);}
 	100% {transform: scale(1); }
+}
+
+.about {
+	margin: 30px auto;
+}
+.about h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+.about-info {
+	display: inline-block;
+	width: 68%;
+	vertical-align: top;
+}
+
+.about-info p {
+	font-size: 20px;
+	padding: 10px;
+	margin-right: 10px;
+	line-height: 1.2;
+}
+
+.about-img {
+	width: 28%;
+	text-align: center top;
+	display: inline-block;
+	background-repeat: repeat;
+	height: 480px;
+	background-image: url('../img/mid-page-accent.jpg');
+	background-position: center;
 }
