@@ -54,7 +54,8 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +64,173 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+body {
+	padding: 20px 80px;
+}
+
 /* Your code starts here! */
+
+header nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: gray;
+	padding: 10px 30px;
+}
+
+header nav a:first-child {
+	padding-left: 0;
+}
+
+nav {
+	margin-bottom: 35px;
+}
+
+.nav-list, .nav-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-list {
+	width: 70%;
+}
+
+/* Sliding Underline Menu - inspired by https://codepen.io/rm/pen/ldhon */
+
+.nav-list hr {
+	height: 2px;
+	width: 3.8rem;
+	text-align: center;
+	margin: -.2rem;
+	background: gray;
+	border: none;
+	transition: .4s ease-in-out;  
+}
+
+.nav-list a:nth-child(2):hover ~ hr {
+	margin-left: 7.1rem;
+}
+
+.nav-list a:nth-child(3):hover ~ hr {
+	margin-left: 14rem;
+}
+
+.nav-list a:nth-child(4):hover ~ hr {
+	margin-left: 21.2rem;
+}
+
+.nav-list a:nth-child(5):hover ~ hr {
+	margin-left: 28.3rem;
+}
+
+.nav-list a:nth-child(6):hover ~ hr {
+	margin-left: 35rem;
+}
+
+.nav-logo {
+	width: 29%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.header-intro {
+	display: inline-block;
+	width: 49%;
+	vertical-align: middle;
+	margin: 20px 0;
+}
+
+.header-intro h1 {
+	font-size: 55px;
+	width: 261px;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header-intro button {
+	display: block;
+	margin: 20px auto;
+	width: 120px;
+	padding: 7px;
+	font-size: 14px;
+	background: transparent;
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+.header-intro button:hover {
+	background: black;
+	color: white;
+	border-color: white;
+}
+
+.header-intro img {
+	display: block;
+	margin: auto;
+} 
+
+.middle-img {
+	width: 100%;
+}
+
+.primary-section div {
+	display: inline-block;
+	width: 48.5%;
+	line-height: 22px;
+	font-size: 19px;
+}
+
+.primary-section div:not(:last-child) {
+	margin-right: 2%;
+}
+
+.primary-section, .secondary-section {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.secondary-section div {
+	display: inline-block;
+	width: 31.5%;
+	line-height: 22px;
+	font-size: 19px;
+}
+
+.secondary-section div:not(:last-child) {
+	margin-right: 2%;
+}
+
+.secondary-section div h2 {
+	font-size: 20px;
+	padding: 20px 0 5px;
+}
+
+footer {
+	margin: 40px 0;
+}
+
+footer h2 {
+	font-size: 20px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	padding: 30px 0;
+}
+
+address {
+	font-size: 19px;
+}
+
+address a {
+	display: inline-block;
+	padding-top: 15px;
+	color: inherit;
+	text-decoration: none;
+}
+
+address a:hover {
+	text-decoration: underline;
+	transition: 0.3s;
+}
