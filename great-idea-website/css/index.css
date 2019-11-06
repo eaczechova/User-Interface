@@ -144,8 +144,13 @@ nav {
 .header-intro {
 	display: inline-block;
 	width: 49%;
-	vertical-align: middle;
-	margin: 20px 0;
+	vertical-align: top;
+	margin: 20px 0;	
+}
+
+.header-intro-wraper {
+	margin: 40px auto;
+	height: 400px;
 }
 
 .header-intro h1 {
@@ -175,13 +180,32 @@ nav {
 	border-color: white;
 }
 
-.header-intro img {
+/* .header-intro img {
 	display: block;
 	margin: auto;
-} 
+}  */
 
-.middle-img {
+.header-intro-img {
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-image: url('../img/header-img.png');
+	background-position: center;
+}
+
+/* .middle-img {
 	width: 100%;
+} */
+
+.img-section {
+	width: 100%;
+	background-repeat: no-repeat;
+	height: 30%;
+	background-image: url('../img/mid-page-accent.jpg');
+	background-position: top;
+	background-size: cover;
 }
 
 .primary-section div {
