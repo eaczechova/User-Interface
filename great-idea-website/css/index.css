@@ -88,8 +88,7 @@ nav {
 	left: 0;
 	width: 100%;
 	background: white;
-	/* z-index: 2;
-	position: absolute; */
+	z-index: 3;
 }
 
 .nav-list, .nav-logo {
@@ -307,3 +306,4 @@ address a:hover {
 	background-image: url('../img/mid-page-accent.jpg');
 	background-position: center;
 }
+
